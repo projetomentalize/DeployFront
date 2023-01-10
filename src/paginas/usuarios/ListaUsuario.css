@@ -1,0 +1,14 @@
+.informacao {
+  text-align: center;
+}
+.center{
+  text-align: center!important;
+  color:rgb(56, 182, 255)!important;
+
+}
+
+.backPost{
+  text-align: center!important;
+  justify-content: center;
+
+}

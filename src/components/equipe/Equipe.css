@@ -1,0 +1,16 @@
+.img-equipe {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.img-equipe:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.brain{
+    transition: all .5s;
+}
+.brain:hover{
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}
