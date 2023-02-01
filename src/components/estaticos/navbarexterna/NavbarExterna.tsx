@@ -26,17 +26,17 @@ function NavbarExterna() {
                         <MenuItem className='item'>
                             <Link to='/sobrenos'>
                                 <Typography className='texto' variant="h6" color="inherit">
-                                    Sobre Nós
+                                    Sobre
                                 </Typography>
                             </Link>
                         </MenuItem>
-                        <MenuItem className='item'>
+                        {/* <MenuItem className='item'>
                             <Link to='/contato'>
                                 <Typography className='texto' variant="h6" color="inherit" >
                                     Contato
                                 </Typography>
                             </Link>
-                        </MenuItem>
+                        </MenuItem> */}
                         <MenuItem className='item'>
                             <Link to="/cadastrousuario">
                                 <Typography className='texto' variant="h6" color="inherit">
