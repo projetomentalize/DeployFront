@@ -14,7 +14,7 @@ function Carrossel() {
                 <Carousel className='carrossel'>
                     <Carousel.Item >
                         <Grid container direction="column" justifyContent="center" alignItems="center" className='caixa-carrossel'>
-                            <Grid item xs={8} >
+                            <Grid item xs={10} >
                                 <Box >
                                     <img className='imagem-carrossel' src="https://raw.githubusercontent.com/projetomentalize/midia/94ac6f7dbb68796d0bddbfb14a1aef4d2ca4aed4/1.svg" alt=""
                                     />
@@ -24,7 +24,7 @@ function Carrossel() {
                     </Carousel.Item>
                     <Carousel.Item>
                         <Grid container direction="column" justifyContent="center" alignItems="center" className='caixa-carrossel'>
-                            <Grid item xs={8} >
+                            <Grid item xs={10} >
                                 <Box >
                                     <img className='imagem-carrossel' src="https://raw.githubusercontent.com/projetomentalize/midia/94ac6f7dbb68796d0bddbfb14a1aef4d2ca4aed4/2.svg" alt="" />
                                 </Box>
@@ -33,7 +33,7 @@ function Carrossel() {
                     </Carousel.Item>
                     <Carousel.Item>
                         <Grid container direction="column" justifyContent="center" alignItems="center" className='caixa-carrossel'>
-                            <Grid item xs={8} >
+                            <Grid item xs={10} >
                                 <Box >
                                     <img className='imagem-carrossel' src="https://raw.githubusercontent.com/projetomentalize/midia/94ac6f7dbb68796d0bddbfb14a1aef4d2ca4aed4/3.svg" alt="" />
                                 </Box>
@@ -42,7 +42,7 @@ function Carrossel() {
                     </Carousel.Item>
                     <Carousel.Item>
                         <Grid container direction="column" justifyContent="center" alignItems="center" className='caixa-carrossel'>
-                            <Grid item xs={8} >
+                            <Grid item xs={10} >
                                 <Box >
                                     <img className='imagem-carrossel' src="https://raw.githubusercontent.com/projetomentalize/midia/94ac6f7dbb68796d0bddbfb14a1aef4d2ca4aed4/4.svg" alt="" />
                                 </Box>
