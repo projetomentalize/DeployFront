@@ -40,13 +40,9 @@ function Home() {
                 <Grid item xs={12}>
                     <Divider/>
                 </Grid>
-                <Grid alignItems='center' item xs={6}>
-                    <Box paddingX={20} >
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='titulo mtop' >Seja bem vindo(a)!</Typography>
-                        <Typography variant='h5' gutterBottom color='textPrimary' component='h5' align='center' className='titulo' >Aproveite para explorar o site!</Typography>
-                        </Box>
+                <Grid alignItems='center' item xs={12}>                    
                     <Box className='teste4'>
-                        <Box marginRight={1}>
+                        <Box marginRight={1} fontSize='50px'>
                             <ModalPostagem />
                         </Box>
                         <Link to="/postagens" className="text-decorator-none">
