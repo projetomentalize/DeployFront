@@ -42,12 +42,9 @@ function Home() {
                 </Grid>
                 <Grid alignItems='center' item xs={12}>                    
                     <Box className='teste4'>
-                        <Box marginRight={1} fontSize='50px'>
+                        <Box marginRight={1} >
                             <ModalPostagem />
-                        </Box>
-                        <Link to="/postagens" className="text-decorator-none">
-                            <Button variant="outlined" className='botao VerCor'>Ver Postagens</Button>
-                        </Link>
+                        </Box>                       
                     </Box> 
                 </Grid>                
                 <TabPostagem/>
