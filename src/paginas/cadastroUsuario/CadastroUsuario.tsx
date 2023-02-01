@@ -102,8 +102,8 @@ function CadastroUsuario() {
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirme sua senha' placeholder='Mínimo 8 caracteres' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth className='campos' />
                         <TextField value={user.foto_url} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto_url' label='Foto'  placeholder='htttp://linkdafoto.jpg' variant='outlined' name='foto_url' margin='normal' fullWidth className='campos' />
                         {/* <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo_usuario' label='Profissão' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' /> */}
-                        <TextField id="select" value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Atuação' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' select>
-                            <MenuItem value="Estudante">Paciente</MenuItem>
+                        <TextField id="select" value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Categoria' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' select>
+                            <MenuItem value="Paciente">Paciente</MenuItem>
                             <MenuItem value="Piscólogo">Psicólogo</MenuItem>
                         </TextField>              
                         <Box marginTop={2} textAlign='center'>
