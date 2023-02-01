@@ -12,35 +12,35 @@ function Equipe() {
                 <Grid item xs={4}>
                     <Box>
                         <a href="https://github.com/CarlosEduardoSilverio" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/cadu.png?raw=true" className="img-equipe" alt="" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/cadu.png?raw=true" className="img-equipe" alt="Calos Eduardo" />
                         </a>
                         <a href="https://github.com/gabrielsjobs" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/Gabriel.png?raw=true" className="img-equipe" alt="" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/Gabriel.png?raw=true" className="img-equipe" alt="Gabriel" />
                         </a>
                         <a href="https://github.com/tadyello" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/tadyello.png?raw=true" className="img-equipe" alt="" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/tadyello.png?raw=true" className="img-equipe" alt="Tadyêllo" />
                         </a>
                     </Box>
                 </Grid>
                 <Grid item xs={3} >
-                    <Box mt={30}>
-                        <img src="https://github.com/projetomentalize/midia/blob/avatar/brain.png?raw=true" className='brain' alt="" />
+                    <Box >
+                        <img src="https://github.com/projetomentalize/midia/blob/avatar/brain.png?raw=true" className='brain' alt="Logo Cérebro" />
                     </Box>
                 </Grid>
                 <Grid item xs={4} >
                     <Box>
                         <a href="https://github.com/deehrv" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/pekky.png?raw=true" className="img-equipe" alt="pekky" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/pekky.png?raw=true" className="img-equipe" alt="Debora" />
                         </a>
                     </Box>
                     <Box>
                         <a href="https://github.com/jessykacarolina" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/jessy.png?raw=true" className="img-equipe" alt="" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/jessy.png?raw=true" className="img-equipe" alt="Jessyka" />
                         </a>
                     </Box>
                     <Box>
                         <a href="https://github.com/Renanbarsan" target="_blank" rel="noopener noreferrer">
-                            <img src="https://github.com/projetomentalize/midia/blob/avatar/Renanv1.svg?raw=true" className="img-equipe" alt="" />
+                            <img src="https://github.com/projetomentalize/midia/blob/avatar/Renanv1.svg?raw=true" className="img-equipe" alt="Renan" />
                         </a>
                     </Box>
                 </Grid>

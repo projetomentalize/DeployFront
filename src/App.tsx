@@ -21,6 +21,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home2 from './paginas/home2/Home2';
 import Perfil from './components/perfil/Perfil';
 import ListaUsuario from './paginas/usuarios/ListaUsuario';
+import Teste from './components/teste/Teste';
+import Carrossel from './components/carrossel/Carrossel';
 
 function App() {
   return (
@@ -66,12 +68,12 @@ function App() {
 
             <Route path="/usuarios" element={<ListaUsuario />} />
 
-
+            <Route path="/teste" element={<Teste />} />
 
           </Routes>
+          
         </div>
         <Footer />
-
       </Router>
     </Provider>
   );

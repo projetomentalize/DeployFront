@@ -1,0 +1,16 @@
+.caixa-carrossel{
+    background-color: #61d2ff;
+    background-image: url(https://raw.githubusercontent.com/projetomentalize/midia/main/back.png);
+    background-repeat: repeat;
+    width: 100%!important;
+    position: center;
+
+}
+.carrossel{
+    max-width: 100%!important;
+}
+
+
+.caixa-carrossel{
+    max-width: 100%!important;
+}

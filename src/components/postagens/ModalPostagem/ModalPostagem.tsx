@@ -4,9 +4,9 @@ import Modal from '@material-ui/core/Modal';
 import {Button } from "@material-ui/core"
 import {Box} from '@mui/material';
 import CloseIcon from '@material-ui/icons/Close';
-import './ModalLogin.css';
-import TelaLogin from '../TelaLogin';
-import LoginOutlinedIcon from '@mui/icons-material/LoginOutlined';
+import './ModalPostagem.css';
+import CadastroPost from '../cadastroPost/CadastroPost';
+
 
 function getModalStyle() {
   const top = 50 ;
@@ -23,16 +23,16 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     paper: {
       position: 'absolute',
-      width: '320',
+      width: 400,
       backgroundColor: theme.palette.background.paper,
-      border: '5px radius solid rgba(0, 0, 0, .125)',
+      border: '2px solid #000',
       boxShadow: theme.shadows[5],
-      
+      padding: theme.spacing(2, 4, 3),
     },
   }),
 );
 
-function ModalLogin () {
+function ModalPostagem () {
   const classes = useStyles();
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
@@ -52,7 +52,7 @@ function ModalLogin () {
       
       </Box>
       
-      <TelaLogin/>
+      <CadastroPost/>
       
     </div>
   );
@@ -61,9 +61,8 @@ function ModalLogin () {
     <div>
       <Button
         variant="outlined"
-        className="btnModal-login"
-        endIcon={<LoginOutlinedIcon />}
-        onClick={handleOpen}>Login </Button>
+        className="btnModal NPCor"
+        onClick={handleOpen}>Nova Postagem</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -75,4 +74,4 @@ function ModalLogin () {
     </div>
   );
 }
-export default ModalLogin;
+export default ModalPostagem;

@@ -1,5 +1,6 @@
 import Divider from "@material-ui/core/Divider";
 import React, { } from "react";
+import Carrossel from "../../components/carrossel/Carrossel";
 import NavbarExterna from "../../components/estaticos/navbarexterna/NavbarExterna";
 import Contato from "../contato/Contato";
 import Login from "../login/Login";

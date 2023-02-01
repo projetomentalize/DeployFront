@@ -1,14 +1,13 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import './CadastroPost.css';
-import {useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../service/Service';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { TokenState } from '../../../store/tokens/tokensReducer';
-import User from '../../../models/User';
 
 function CadastroPost() {
 
@@ -18,11 +17,11 @@ function CadastroPost() {
 
     const token = useSelector<TokenState, TokenState['tokens']>(
         (state) => state.tokens
-      )
+    )
 
     // const userId = useSelector<TokenState, TokenState['id']>(
-	// 	(state) => state.id
-	// )
+    // 	(state) => state.id
+    // )
 
     useEffect(() => {
         if (token == '') {
@@ -39,26 +38,26 @@ function CadastroPost() {
             navigate('/login')
 
         }
-    }, [token])  
-    
+    }, [token])
+
     const [temas, setTemas] = useState<Tema[]>([])
 
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
             nome: '',
-            abordagem:''
+            abordagem: ''
         })
 
     const [postagem, setPostagem] = useState<Postagem>({
         id: 0,
         titulo: '',
-        midia_url:'',
+        midia_url: '',
         texto: '',
         // data: '',
         tema: null,
         // usuario: null
-    }) 
+    })
 
     // const [usuario,setUsuario] = useState<User>({
     //     id: +userId,
@@ -75,11 +74,11 @@ function CadastroPost() {
             ...postagem,
             [e.target.name]: e.target.value,
             tema: tema
-            
+
         })
 
     }
-    
+
     async function getTemas() {
         await busca("/temas", setTemas, {
             headers: {
@@ -88,7 +87,7 @@ function CadastroPost() {
         })
     }
 
-    useEffect(() => { 
+    useEffect(() => {
         setPostagem({
             ...postagem,
             tema: tema,
@@ -103,7 +102,7 @@ function CadastroPost() {
                 'Authorization': token
             }
         })
-    } 
+    }
 
     useEffect(() => {
         getTemas()
@@ -118,44 +117,44 @@ function CadastroPost() {
         if (id !== undefined) {
             try {
                 await put(`/postagens`, postagem, setPostagem, {
-                  headers: {
-                    Authorization: token
-                  }
-            })
-            toast.success('Postagem atualizada com sucesso', {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: "colored",
-                progress: undefined,
-            }); 
-              } catch (error) {
+                    headers: {
+                        Authorization: token
+                    }
+                })
+                toast.success('Postagem atualizada com sucesso', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
+            } catch (error) {
                 alert('Falha ao atualizar a postagem') //
-              }
-            } else {
-                try {
+            }
+        } else {
+            try {
                 await post(`/postagens`, postagem, setPostagem, {
-                  headers: {
-                     Authorization: token
-               }
-            })
-            toast.success('Postagem cadastrada com sucesso', {
-                position: "top-right",
-                autoClose: 2000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: false,
-                draggable: false,
-                theme: "colored",
-                progress: undefined,
-            });
-          }catch (error) {
+                    headers: {
+                        Authorization: token
+                    }
+                })
+                toast.success('Postagem cadastrada com sucesso', {
+                    position: "top-right",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: false,
+                    theme: "colored",
+                    progress: undefined,
+                });
+            } catch (error) {
                 alert('Falha ao cadastrar a postagem')
-              }
-       }
+            }
+        }
         back()
 
     }
@@ -167,7 +166,7 @@ function CadastroPost() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-            <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="titulo" variant="outlined" name="titulo" margin="normal" fullWidth />
                 <TextField value={postagem.midia_url} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="midia_url" label="Link do Arquivo" name="midia_url" variant="outlined" margin="normal" fullWidth />
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="Texto" variant="outlined" name="texto" margin="normal" fullWidth />
