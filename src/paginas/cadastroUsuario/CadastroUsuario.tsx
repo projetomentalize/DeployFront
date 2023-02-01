@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
 import NavbarExterna from '../../components/estaticos/navbarexterna/NavbarExterna';
+import Divider from '@material-ui/core/Divider';
 
 function CadastroUsuario() {
 
@@ -82,24 +83,29 @@ function CadastroUsuario() {
     }
     return (
         <>
-        <NavbarExterna/>
-        <Grid container direction='row' justifyContent='center' alignItems='center' className='container-cadastro'>
-            <Grid item xs={6} className='imagem-cadastro'></Grid>
-            <Grid item xs={6} alignItems='center'>
-                <Box paddingX={10}>
-                    <form onSubmit={onSubmit}>
+        <NavbarExterna/>        
+            <Grid container className='img-cadastro'>
+                <Grid container direction='column' justifyContent='center' alignItems='center' className='container-cadastro'>
+                    <Box boxShadow={2} display='flex' justifyContent='center' marginTop={2} className='caixa-cadastro'>
+                        <Divider />
+                        <Divider />                        
+                        <form onSubmit={onSubmit} className='form-cadastro' >
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos2'>Cadastrar</Typography>
-                        <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal'  fullWidth />
-                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='E-mail' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' placeholder='Mínimo 8 caracteres'  variant='outlined' name='senha' margin='normal' type='password' fullWidth />
-                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirme sua senha' placeholder='Mínimo 8 caracteres' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth />
-                        <TextField value={user.foto_url} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto_url' label='Foto'  placeholder='htttp://linkdafoto.jpg' variant='outlined' name='foto_url' margin='normal' fullWidth />
-                        {/* <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo_usuario' label='Profissão' variant='outlined' name='tipo_usuario' margin='normal' fullWidth /> */}
-                        <TextField id="select" value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Atuação' variant='outlined' name='tipo_usuario' margin='normal' fullWidth select>
-                            <MenuItem value="Estudante">Estudante</MenuItem>
+                        <Box display='flex' justifyContent='center' >
+                            <Box marginRight={1}>
+                                <Typography variant='subtitle1' gutterBottom align='center' className='texto2'>Por favor preencha todos os campos para fazer o seu cadastro:</Typography>
+                            </Box>
+                        </Box>
+                        <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='Nome' variant='outlined' name='nome' margin='normal'  fullWidth className='campos' />
+                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='E-mail' variant='outlined' name='usuario' margin='normal' fullWidth className='campos' />
+                        <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' placeholder='Mínimo 8 caracteres'  variant='outlined' name='senha' margin='normal' type='password' fullWidth className='campos' />
+                        <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='Confirme sua senha' placeholder='Mínimo 8 caracteres' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth className='campos' />
+                        <TextField value={user.foto_url} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='foto_url' label='Foto'  placeholder='htttp://linkdafoto.jpg' variant='outlined' name='foto_url' margin='normal' fullWidth className='campos' />
+                        {/* <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo_usuario' label='Profissão' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' /> */}
+                        <TextField id="select" value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Perfil' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' select>
+                            <MenuItem value="Paciente">Paciente</MenuItem>
                             <MenuItem value="Piscólogo">Piscólogo</MenuItem>
-                            <MenuItem value="Usuário">Usuário</MenuItem>
-                        </TextField>                        
+                        </TextField>              
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
                                 <Button variant='contained' color='secondary' className='btnCancelar'>
@@ -109,14 +115,11 @@ function CadastroUsuario() {
                             <Button type='submit' variant='contained' color='primary' className='btnCadastrar'>
                                 Cadastrar
                             </Button>
-                        </Box>
-                    </form>
-                </Box>
+                            </Box>
+                        </form>                        
+                    </Box>
+                </Grid>
             </Grid>
-
-
-
-        </Grid>
         </>
     );
 }

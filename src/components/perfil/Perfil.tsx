@@ -1,4 +1,3 @@
-import { makeStyles } from '@material-ui/core';
 import {Grid,Typography} from '@mui/material';
 import { Container } from '@mui/system';
 import React, { useEffect, useState } from 'react';
@@ -6,7 +5,7 @@ import { useSelector } from 'react-redux';
 import User from '../../models/User';
 import { TokenState } from '../../store/tokens/tokensReducer';
 import './Perfil.css';
-import { busca, buscaId } from '../../service/Service';
+import { buscaId } from '../../service/Service';
 
 function Perfil() {
     const token = useSelector<TokenState, TokenState['tokens']>(

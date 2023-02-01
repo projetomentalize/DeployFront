@@ -7,6 +7,7 @@ import { TokenState } from '../../store/tokens/tokensReducer';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import Carrossel from '../../components/carrossel/Carrossel';
 
 function Home() {
     let navigate = useNavigate();
@@ -33,6 +34,8 @@ function Home() {
 
     return (
         <>
+        <Carrossel/>
+
             <Grid container direction='row' justifyContent='center' alignItems='center' className='caixa '>
                 <Grid item xs={12}>
                     <Divider/>

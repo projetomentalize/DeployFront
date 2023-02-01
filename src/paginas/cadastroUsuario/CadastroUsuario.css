@@ -1,23 +1,76 @@
+
+* {
+    text-size-adjust: 100% !important;
+
+}
+.img-cadastro {
+    min-height: 100vh;
+    background: white ;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-image: url(https://resumedone.co/static/img/login/Without-BG.svg);
+    /* background-image: url(https://raw.githubusercontent.com/projetomentalize/midia/69ed2525f1ec2cea9ddd0b998929d3b1c4044f22/coverlogin.svg); */
+    z-index: 2;
+    background-size: cover;
+        
+    }
 .container-cadastro{
-    min-height: 100vh!important;
-    margin-top: 3.3%;
+    margin-top: 6%;
+    margin-bottom: 3%;
 }
 
-.imagem-cadastro{
-    background-image: url(https://raw.githubusercontent.com/projetomentalize/midia/69ed2525f1ec2cea9ddd0b998929d3b1c4044f22/coverlogin.svg);
-    background-repeat: no-repeat;
-    min-height: 100%!important;
-    height: 100vh!important;
-    background-size: cover;
-    background-position: center;
-    margin-top: 5% !important;
-    margin-bottom: 3.1% !important;
-    border-radius: 5% !important;
-    padding: 25% !important;
+.form-cadastro{
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    margin-top: 1% !important;
+    margin-bottom:  1% !important;
+    text-align: center!important;
 }
 
 .textos2{
     font-weight: bold !important;  
+}
+
+.campos {
+    font-weight: bold !important;
+    width:90%!important;
+}
+
+.texto1 {
+    font-weight: bold !important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 1%!important;
+    margin-bottom: 1%!important;
+    font-size: 1.5em!important;
+    
+    
+}
+.texto2 {
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-top: 10%!important;
+    margin-bottom: 10%!important;
+    color: grey;
+    
+}
+.text-decorator-none {
+    text-decoration: none;
+}
+
+.caixa-cadastro {
+    width: 320px;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.25rem;
+    margin-top: 10%;
+    width: 450px;    
 }
 
 .btnCancelar{
@@ -26,7 +79,7 @@
     font-weight: 700 !important;
     border-radius: auto !important;
     font-family: Gilroy Regular !important;
-    font-size: 13px !important;
+    font-size: 10px !important;
     font-weight: bold !important;
     font-style: normal !important;
     letter-spacing: 0.78px !important;
@@ -41,7 +94,7 @@
     font-weight: 700 !important;
     border-radius: auto !important;
     font-family: Gilroy Regular !important;
-    font-size: 13px !important;
+    font-size: 10px !important;
     font-weight: bold !important;
     font-style: normal !important;
     letter-spacing: 0.78px !important;

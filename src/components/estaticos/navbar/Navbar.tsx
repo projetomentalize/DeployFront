@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Button, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Button, MenuItem, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom'
@@ -45,49 +45,50 @@ function Navbar(): JSX.Element {
                         <img src="https://raw.githubusercontent.com/projetomentalize/midia/5b75364a92009a3098609fe8fa0b46298edb1dc1/logosf.svg" alt='logoMentalize' />
                     </Box>
                 <Box display="flex" justifyContent="start">
-                    <Link to="/home" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
-                                Pagina Inicial
+                    <Link to="/home" >
+                        <MenuItem className='cursor'>
+                            <Typography className='texto' variant="h6" color="inherit">
+                                Home
                             </Typography>
-                        </Box>
+                        </MenuItem>
                     </Link>
-                    <Link to="/postagens" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
+                    <Link to="/postagens" >
+                        <MenuItem className='cursor'>
+                            <Typography className='texto' variant="h6" color="inherit">
                                 Postagens
                             </Typography>
-                        </Box>
+                        </MenuItem>
                     </Link>
-                    <Link to="/temas" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
+                    {/* <Link to="/temas" >
+                        <MenuItem className='cursor'>
+                            <Typography className='texto' variant="h6" color="inherit">
                                 Temas
                             </Typography>
-                        </Box>
+                        </MenuItem>
                     </Link>
-                    <Link to="/formularioTema" className="text-decorator-none">
-                        <Box mx={1} className='cursor'>
-                            <Typography variant="h6" color="inherit">
+                    <Link to="/formularioTema" >
+                        <MenuItem className='cursor'>
+                            <Typography className='texto' variant="h6" color="inherit">
                                 Cadastrar Tema
                             </Typography>
-                        </Box>
-                    </Link>                   
-                    <Link to="/usuarios" className="text-decorator-none">
-                    <Box mx={1} className="cursor">
-                        <Typography variant="h6" color="inherit">
+                        </MenuItem>
+                    </Link>                    */}
+                    <Link to="/usuarios" >
+                    <MenuItem className="cursor">
+                        <Typography className='texto' variant="h6" color="inherit">
                           Usuários
                         </Typography>
-                   </Box>
+                   </MenuItem>
                    </Link>                  
                 </Box>
-                <Box mx={1} ml={50} className='cursor' justifyContent="flex-end" alignContent="flex-end">
-                    <Button 
-                     variant="contained"
+                <Box>
+                <MenuItem className='cursor' >
+                    <Button                   
                      className="btnModal-logout"
                       endIcon={<LogoutOutlinedIcon />}
                       onClick={goLogout}> SAIR </Button>
-                      </Box>
+                      </MenuItem>
+                </Box>      
             </Toolbar>
         </AppBar>
     }

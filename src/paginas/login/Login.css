@@ -39,18 +39,17 @@
 }
 
 .caixalogin {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    width: 25%;
-    height: 65%;
+    /* margin-left: 25;
+    margin-right: 25;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+    width: 320px;
     background-color: white;
     z-index: 1;
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
+    /* min-width: 90%; */
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, .125);
@@ -59,11 +58,11 @@
 }
 
 .formlogin {
-    margin-left: 1% !important;
+    /* margin-left: 1% !important;
     margin-right: 1% !important;
     margin-top: 1% !important;
     margin-bottom:  1% !important;
-    text-align: center!important;
+    text-align: center!important; */
 
 }
 

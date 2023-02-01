@@ -67,11 +67,10 @@ function App() {
             <Route path="/usuarios" element={<ListaUsuario />} />
 
 
-
           </Routes>
+          
         </div>
         <Footer />
-
       </Router>
     </Provider>
   );
