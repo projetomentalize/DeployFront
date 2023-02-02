@@ -104,7 +104,7 @@ function CadastroUsuario() {
                         {/* <TextField value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='tipo_usuario' label='Profissão' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' /> */}
                         <TextField id="select" value={user.tipo_usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} label='Perfil' variant='outlined' name='tipo_usuario' margin='normal' fullWidth className='campos' select>
                             <MenuItem value="Paciente">Paciente</MenuItem>
-                            <MenuItem value="Psicólogo">Psicólogo</MenuItem>
+                            <MenuItem value="Psicólogo">Psicólogo(a)</MenuItem>
                         </TextField>              
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/login' className='text-decorator-none'>
