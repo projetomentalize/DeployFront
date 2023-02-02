@@ -120,10 +120,10 @@ function ListaUsuario() {
                       Contato: {user.usuario}
                       <br />
                       <br />
-                      Formação: {user.tipo_usuario}
+                      Perfil: {user.tipo_usuario}
                       <br />
                       <br />
-                      {user.nome} possui um total de {user.postagem?.length}{' '}
+                      {/* {user.nome} possui um total de {user.postagem?.length}{' '}
                       postagens publicadas:
                       <div className="postUser">
                         {user.postagem?.map(post => (
@@ -133,7 +133,7 @@ function ListaUsuario() {
                             <strong> Tema: {post.tema?.nome}</strong>
                           </div>
                         ))}
-                      </div>
+                      </div> */}
                     </Typography>
                   </CardContent>
                 </Collapse>
