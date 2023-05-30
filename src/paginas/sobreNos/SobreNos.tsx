@@ -2,7 +2,7 @@ import { CardMedia, Divider, Typography } from "@material-ui/core";
 import { Box, Grid } from "@mui/material";
 import React from "react";
 import NavbarExterna from "../../components/estaticos/navbarexterna/NavbarExterna";
-import './SobreNos.css';
+import './SobreNos.css'
 import Equipe from "../../components/equipe/Equipe";
 
 
