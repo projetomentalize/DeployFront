@@ -108,7 +108,7 @@ function Login() {
             
             <Grid container className='grid1'>
                 <Grid container direction='column' justifyContent='center' alignItems='center'>
-                    <Box boxShadow={2} display='flex' justifyContent='center' marginTop={8} className='caixalogin'>
+                    <Box boxShadow={2} display='flex' justifyContent='center' marginTop={2} className='caixalogin'>
                         <Divider />
                         <Typography color='textPrimary' align='center' className='texto1'>Entrar</Typography>
                         <Divider />
