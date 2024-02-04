@@ -30,13 +30,20 @@ function NavbarExterna() {
                                 </Typography>
                             </Link>
                         </MenuItem>
-                        {/* <MenuItem className='item'>
+                        <MenuItem className='item'>
                             <Link to='/contato'>
                                 <Typography className='texto' variant="h6" color="inherit" >
                                     Contato
                                 </Typography>
                             </Link>
-                        </MenuItem> */}
+                        </MenuItem>
+                        {/* <MenuItem className='item'>
+                            <Link to='/contato'>
+                                <Typography className='texto' variant="h6" color="inherit" >
+                                    Blog
+                                </Typography>
+                            </Link>
+                        </MenuItem>                         */}
                         <MenuItem className='item'>
                             <Link to="/cadastrousuario">
                                 <Typography className='texto' variant="h6" color="inherit">

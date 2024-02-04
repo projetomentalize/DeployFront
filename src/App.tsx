@@ -27,7 +27,7 @@ function App() {
     <Provider store={store}>
       <ToastContainer />
       <Router>
-        <Navbar />
+        <Navbar/>
         <div style={{ minHeight: '100vh' }}>
           <Routes>
             <Route path="/home2" element={<Home2 />}/>
@@ -65,6 +65,8 @@ function App() {
             <Route path="/perfil" element={<Perfil />} />
 
             <Route path="/usuarios" element={<ListaUsuario />} />
+
+
 
 
           </Routes>
