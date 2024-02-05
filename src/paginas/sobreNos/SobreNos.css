@@ -1,126 +1,97 @@
-.container-sobrenos{
-text-align: center!important;    
-                                           
+/* Estilos gerais */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Container de sobrenós */
+.container-sobrenos {
+    text-align: center !important;
+    margin-top:5% !important;
+}
+
+.titulo-aboutus {
+    font-family: 'Donau Uppercase', sans-serif !important;
+    color: rgb(56, 182, 255) !important;
+    margin-bottom: 5% !important;
+}
+
+.card{
+    min-height: 500px !important;
+    margin: 20px !important;
+    transition: all 0.3s;
 
 }
 
+.card-img {
+    width: 50% !important;
+    margin: auto;
+  }
+  
+  .card-content {
+    height: 100px!important
+  }
+
+  .card:hover {
+    background-color: #f0f0f0; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aplica um efeito de escala ao passar o mouse */
+    box-shadow: 0 0 10px rgb(56, 182, 255) !important; /* Adiciona uma sombra sutil ao passar o mouse */
+  }
+ 
+.txt-home1 {
+    font-family: 'Donau Uppercase', sans-serif !important;
+    text-transform: uppercase;
+    margin-right: 15% !important;
+    margin-bottom: 5% !important;
+}
+
+/* Imagens da equipe */
 .img-equipe {
     transition: all 0.5s;
     cursor: pointer;
 }
 
-.img-equipe:hover{
-    -webkit-transform: scale(1.2);
+.img-equipe:hover {
     transform: scale(1.2);
 }
-.brain{
+
+.brain {
     transition: all .5s;
 }
-.brain:hover{
-    -webkit-transform: rotateZ(-360deg) scale(1.5);
+
+.brain:hover {
     transform: rotateZ(-360deg) scale(1.5);
 }
 
-.titulo-sobrenos{
-font-family: 'Donau Uppercase', sans-serif!important;
-text-transform: uppercase;
-color:rgb(56, 182, 255)!important;
-margin-bottom: 5%!important;
-
-}
-
-.img-aboutus1{
-    margin-left: 10%!important;
-    width: 90%;
-}
-
-
-
-.txt-home1{
-font-family: 'Donau Uppercase', sans-serif!important;
-text-transform: uppercase;
-margin-right: 15%!important;
-margin-bottom: 5%!important;
-
-}
-
-.container-home2{
-    margin-bottom: 5%!important;    
-                                               
-}    
-
-.txt-indicador{
-font-family: 'Donau Uppercase', sans-serif!important;
-text-transform: uppercase;
-margin-right: 15%!important;
-margin-bottom: 5%!important;
-font-size: 18px!important;
-
-}
-
-.img-indicador1{
-    margin-left: 5%!important;
-    width: 60%!important;
-    margin-top: 10%!important;
-}
-
-.img-indicador2{
-    margin-right: 5%!important;
-    width: 70%!important;
-}
-
-
-.container-contato{
+/* Container de contato */
+.container-contato, .container-contato1 {
     text-align: center;
-    
-    
 }
 
-.container-contato1{
-    text-align: center;
-    
-    
-    
+.titulo-contato {
+    margin-top: 5% !important;
 }
 
-
-.titulo-contato{
-    margin-top: 5%!important;
-}
-.box-contato{
+.box-contato {
     margin: 5%;
-    text-align: center!important;
-    border-radius: 1px!important;
+    text-align: center !important;
+    border-radius: 1px !important;
     border: 2px solid rgba(0, 0, 0, .125);
     width: 30%;
     margin-bottom: 5%;
-    
-
 }
 
-.form-contato{
-    margin-top:10%;
-    margin-bottom:15% ;
-
-
+.form-contato {
+    margin-top: 10%;
+    margin-bottom: 15%;
 }
-
 
 .txt-area {
     margin-top: 5%;
     margin-bottom: 5%;
-    
-    width: 90%;  
-   
+    width: 90%;
 }
 
-.txtdark{
+.txtdark {
     color: black;
-    margin-top: 1%px!important;
-
-    
+    margin-top: 1px !important;
 }
-
-
-
-
